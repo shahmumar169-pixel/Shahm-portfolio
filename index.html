@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a Data Science student specializing in Python, statistics, data analysis, and machine learning.">
+    <title>Data Science Portfolio</title>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Boxicons for simple icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="header">
+        <a href="#" class="logo">Muhammed<span>.</span></a>
+        
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        
+        <div class="menu-icon">
+            <i class='bx bx-menu' id="menu-icon"></i>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h3>Hello, I am</h3>
+            <h1>Muhammed Shahm</h1>
+            <h3>a <span class="highlight">Data Science Student</span></h3>
+            <p>Passionate about applying data-driven approaches to solve real-world problems and support decision-making.</p>
+            
+            <div class="hero-btn-group">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
+            
+            <div class="social-links">
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-kaggle'></i></a>
+            </div>
+        </div>
+        
+        <div class="hero-img">
+            <!-- Decorative elements for hero section -->
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="hero-graphic">
+                <i class='bx bx-data hero-icon'></i>
+                <div class="glass-card stat-card">
+                    <h4>Data Analysis</h4>
+                    <div class="bar-chart">
+                        <div class="bar b1"></div>
+                        <div class="bar b2"></div>
+                        <div class="bar b3"></div>
+                    </div>
+                </div>
+                <div class="glass-card stat-card right-card">
+                    <h4>Machine Learning</h4>
+                    <i class='bx bx-brain'></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        
+        <div class="about-content">
+            <div class="about-text-container glass-panel">
+                <p>I am a <strong>Data Science student</strong> with a strong foundation in Python, statistics, and data analysis, and a growing focus on machine learning. I am particularly interested in applying data-driven approaches to solve real-world problems and support decision-making.</p>
+                <p>Through my coursework and self-initiated projects, I have worked with tools such as Python, SQL, and libraries like Pandas and Scikit-learn to clean, analyze, and model data. I enjoy breaking down complex problems, exploring datasets, and building practical solutions that deliver clear insights.</p>
+                <p>I am currently seeking internship opportunities where I can apply my skills in a real-world environment, learn from experienced professionals, and contribute meaningfully to data-driven projects. I am motivated, detail-oriented, and committed to continuous learning and improvement.</p>
+                <p class="goal-text">My goal is to grow into a data professional who can combine technical skills with analytical thinking to create impactful solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Skills & <span>Expertise</span></h2>
+        
+        <div class="skills-container">
+            <div class="skill-category glass-panel">
+                <i class='bx bx-code-alt skill-icon'></i>
+                <h3>Languages & Databases</h3>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">R (Basic)</span>
+                </div>
+            </div>
+            
+            <div class="skill-category glass-panel">
+                <i class='bx bx-layer skill-icon'></i>
+                <h3>Libraries & Tools</h3>
+                <div class="skill-tags">
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">Seaborn</span>
+                </div>
+            </div>
+            
+            <div class="skill-category glass-panel">
+                <i class='bx bx-line-chart skill-icon'></i>
+                <h3>Core Competencies</h3>
+                <div class="skill-tags">
+                    <span class="tag">Data Analysis</span>
+                    <span class="tag">Statistics</span>
+                    <span class="tag">Machine Learning</span>
+                    <span class="tag">Data Cleaning</span>
+                    <span class="tag">Predictive Modeling</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        
+        <div class="projects-container">
+            <div class="project-box glass-panel">
+                <div class="project-img">
+                    <div class="mock-img gradient-bg-1">
+                        <i class='bx bx-shopping-bag'></i>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h4>Customer Churn Prediction</h4>
+                    <p>Developed a machine learning model to predict customer churn using demographic and behavioral data. Applied random forest classification and improved retention strategies.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>Pandas</span>
+                    </div>
+                    <a href="#" class="project-link"><i class='bx bx-link-external'></i> View Details</a>
+                </div>
+            </div>
+            
+            <div class="project-box glass-panel">
+                <div class="project-img">
+                    <div class="mock-img gradient-bg-2">
+                        <i class='bx bx-trending-up'></i>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h4>Retail Sales Forecasting</h4>
+                    <p>Analyzed historical sales data to forecast future trends using time series analysis. Visualized insights to optimize inventory management.</p>
+                    <div class="project-tags">
+                        <span>SQL</span>
+                        <span>Statsmodels</span>
+                        <span>Seaborn</span>
+                    </div>
+                    <a href="#" class="project-link"><i class='bx bx-link-external'></i> View Details</a>
+                </div>
+            </div>
+            
+            <div class="project-box glass-panel">
+                <div class="project-img">
+                    <div class="mock-img gradient-bg-3">
+                        <i class='bx bx-message-square-detail'></i>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h4>Sentiment Analysis Pipeline</h4>
+                    <p>Built a natural language processing pipeline to analyze product reviews, categorizing feedback into positive, neutral, and negative sentiments.</p>
+                    <div class="project-tags">
+                        <span>NLTK</span>
+                        <span>Python</span>
+                        <span>Regex</span>
+                    </div>
+                    <a href="#" class="project-link"><i class='bx bx-link-external'></i> View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Services</span></h2>
+        
+        <div class="services-container">
+            <div class="service-box glass-panel">
+                <i class='bx bx-filter-alt'></i>
+                <h3>Data Cleaning & Prep</h3>
+                <p>Transforming raw, messy datasets into structured, usable formats ready for in-depth analysis and modeling.</p>
+            </div>
+            
+            <div class="service-box glass-panel">
+                <i class='bx bx-bar-chart-alt-2'></i>
+                <h3>Exploratory Data Analysis</h3>
+                <p>Uncovering hidden patterns, correlations, and insights within datasets using statistical methods and visualizations.</p>
+            </div>
+            
+            <div class="service-box glass-panel">
+                <i class='bx bx-brain'></i>
+                <h3>Predictive Modeling</h3>
+                <p>Building basic machine learning models to forecast trends and support data-driven decision making.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        
+        <div class="contact-container glass-panel">
+            <div class="contact-info">
+                <h3>Let's Work Together</h3>
+                <p>I'm currently looking for internship opportunities. Feel free to reach out if you have a position available or just want to connect!</p>
+                
+                <div class="contact-item">
+                    <i class='bx bx-envelope'></i>
+                    <span>shahmumar169@gmail.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class='bx bx-map'></i>
+                    <span>Kannur, India</span>
+                </div>
+            </div>
+            
+            <form action="#" class="contact-form" id="contactForm">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 by Muhammed Shahm | All Rights Reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
