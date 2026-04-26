@@ -31,26 +31,38 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 };
 
-// Form Submission Mock
+// Form Submission Logic
 const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+const hiddenIframe = document.getElementById('hidden_iframe');
+
+if (contactForm && hiddenIframe) {
+    let isSubmitting = false;
+
+    contactForm.addEventListener('submit', () => {
+        isSubmitting = true;
         
-        // Simple animation/feedback on submit
+        // Change button state
         const btn = contactForm.querySelector('button');
-        const originalText = btn.textContent;
-        
-        btn.textContent = 'Message Sent!';
-        btn.style.background = '#10b981'; // Green success color
-        btn.style.boxShadow = '0 0 1rem #10b981';
-        
-        contactForm.reset();
-        
-        setTimeout(() => {
-            btn.textContent = originalText;
-            btn.style.background = '';
-            btn.style.boxShadow = '';
-        }, 3000);
+        btn.textContent = 'Sending...';
+    });
+
+    hiddenIframe.addEventListener('load', () => {
+        if (isSubmitting) {
+            const btn = contactForm.querySelector('button');
+            const originalText = 'Send Message';
+            
+            btn.textContent = 'Message Sent!';
+            btn.style.background = '#10b981'; // Green success color
+            btn.style.boxShadow = '0 0 1rem #10b981';
+            
+            contactForm.reset();
+            isSubmitting = false;
+            
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.background = '';
+                btn.style.boxShadow = '';
+            }, 3000);
+        }
     });
 }
